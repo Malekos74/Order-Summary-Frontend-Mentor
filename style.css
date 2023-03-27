@@ -148,6 +148,7 @@ button {
 }
 
 .hanne {
+    color:inherit;
     text-decoration: none;
 }
 .hanne:visited {
