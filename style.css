@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'RedHatDisplay';
+    font-weight: 500;
+    src: url('fonts/RedHatDisplay-Medium.woff2') format('woff2'),
+         url('fonts/RedHatDisplay-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'RedHatDisplay';
+    font-weight: 700;
+    src: url('fonts/RedHatDisplay-Bold.woff2') format('woff2'),
+         url('fonts/RedHatDisplay-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'RedHatDisplay';
+    font-weight: 900;
+    src: url('fonts/RedHatDisplay-Black.woff2') format('woff2'),
+         url('fonts/RedHatDisplay-Black.woff') format('woff');
+}
+
+.attribution {
+    display: none;
+}
+* {
+    font-family: RedHatDisplay;
+}
+
+body {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-position: top;
+
+}
+
+html {
+    background-color: hsl(225, 100%, 94%);
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+img {
+    border-radius: 1rem 1rem 0 0;
+}
+.card {
+    background-color: white;
+    border-radius: 1rem;
+}
+.content {
+    text-align: center;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+
+.title {
+    color: hsl(223, 47%, 23%);
+    margin-top: 2rem;
+    font-weight: 900;
+}
+.desc {
+    font-weight: 500;
+    width: 30ch;
+    margin: auto;
+    color: hsl(224, 23%, 55%);
+}
+.plan {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'svg type empty change'
+    'svg price empty change';
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+
+    align-items: center;
+    height: 5rem;
+    width: 22rem;
+
+    margin-bottom: 2rem;
+}
+.icon {
+    grid-area: svg;
+}
+.name {
+    grid-area: type;
+
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    padding-top: 15px;
+}
+.price {
+    grid-area: price;
+
+    color: hsl(224, 23%, 55%);
+    padding-bottom: 22px;
+}
+.change {
+    grid-area: change;
+
+    margin-right:1rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.change a:visited {
+    color: hsl(245, 75%, 52%);
+}
+.change a:hover {
+    color: hsl(225, 52%, 68%);
+    text-decoration: none;
+}
+
+
+button {
+    width: 22rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    height: 3rem;
+
+    font-weight: 700;
+}
+
+
+
+.confirm-button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+
+    box-shadow: 0px 7px 15px hsla(245, 75%, 52%, 0.381);
+}
+.confirm-button:hover {
+    background-color: hsl(225, 52%, 68%);
+    cursor: pointer;
+}
+
+.cancel-button {
+    color: hsl(224, 23%, 55%);
+    background-color: white;
+}
+.cancel-button:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.hanne {
+    text-decoration: none;
+}
+.hanne:visited {
+    color: inherit;
+}
+
+
