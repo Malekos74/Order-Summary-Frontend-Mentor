@@ -24,7 +24,9 @@
     font-family: RedHatDisplay;
 }
 
-body {
+html {
+    background-color: hsl(225, 100%, 94%);
+
     background-image: url('images/pattern-background-desktop.svg');
     background-repeat:repeat-x;
     background-attachment: fixed;
@@ -32,8 +34,13 @@ body {
 
 }
 
-html {
-    background-color: hsl(225, 100%, 94%);
+@media only screen and (max-width: 600px) {
+    html {
+        background-image: url('images/pattern-background-mobile.svg');
+        background-repeat:repeat-x;
+        background-attachment: fixed;
+        background-position: top;
+    }
 }
 
 main {
@@ -148,11 +155,13 @@ button {
 }
 
 .hanne {
-    color:inherit;
     text-decoration: none;
+    color: inherit;
 }
 .hanne:visited {
     color: inherit;
 }
+
+
 
 
